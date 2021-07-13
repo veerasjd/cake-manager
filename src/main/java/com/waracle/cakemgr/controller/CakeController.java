@@ -3,8 +3,6 @@ package com.waracle.cakemgr.controller;
 import com.waracle.cakemgr.model.Cake;
 import com.waracle.cakemgr.service.CakeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,7 +15,7 @@ public class CakeController {
     private CakeService cakeService;
 
     @GetMapping("/cakes")
-    public List<Cake> getCakes(@AuthenticationPrincipal OAuth2User principal){
+    public List<Cake> getCakes(){
   //  public List<Cake> getCakes(@AuthenticationPrincipal OAuth2User principal){
         return cakeService.getCakes();
     }
