@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>List of cakes available</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+        <p th:text="${cakes}"></p>
+        <ul th:each="cake : ${cakes}">
+            <li th:text="${cake.title}"></li>
+            <li th:text="${cake.desc}"></li>
+            <img th:src="${cake.image}"/>
+        </ul>
+
+</body>
+</html>
