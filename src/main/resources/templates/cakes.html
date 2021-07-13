@@ -6,11 +6,10 @@
 </head>
 <body>
 
-        <p th:text="${cakes}"></p>
         <ul th:each="cake : ${cakes}">
-            <li th:text="${cake.title}"></li>
-            <li th:text="${cake.desc}"></li>
-            <img th:src="${cake.image}"/>
+         Title :   <li th:text="${cake.title}"></li>
+         Description:     <li th:text="${cake.desc}"></li>
+         Cake image:    <img th:src="${cake.image}"/>
         </ul>
 
 </body>

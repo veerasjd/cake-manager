@@ -88,16 +88,3 @@ Bonus points:
 * Authentication via OAuth2 => i added dependency in pom file and required code snippets/configs(client_id/client_secret) to authenticate user using oauth2 provider but commented out.
 * Continuous Integration via any cloud CI system : I used Jenkins/Gitlab to make service CI/CD pipelines. we can configure shell script/job to execute when repository events is triggered.
 * Containerisation : used docker
-
-
-Submission
-==========
-
-Please provide your version of this project as a git repository (e.g. Github, BitBucket, etc).
-
-Alternatively, you can submit the project as a zip or gzip. Use Google Drive or some other file sharing service to
-share it with us.
-
-Please also keep a log of the changes you make as a text file and provide this to us with your submission.
-
-Good luck!
